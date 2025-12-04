@@ -20,7 +20,7 @@ This project uses deep learning EfficientNetB3 to detect lung cancer from CT sca
 
 lung-cancer-detection/
 ├── manual_test/ # 10 test images (used for inference demo)
-├── main.py # DenseNet121-based model training
+├── main.py # EfficientNetB3-based model training
 ├── sample.py # Script to run model on manual_test images
 ├── lung_cancer_densenet121.pth # Trained model weights
 ├── requirements.txt # To install all dependencies
