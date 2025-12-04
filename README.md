@@ -1,6 +1,6 @@
-# 🩺 Lung Cancer Detection with DenseNet121
+# 🩺 Lung Cancer Detection with EfficientNetB3
 
-This project uses deep learning (DenseNet121) to detect lung cancer from CT scan images. It is based on the publicly available dataset from kaggle for 2D X Ray Images and 3D images from LUNA16 dataset and is focused on classifying pulmonary nodules as cancerous or non-cancerous using 2D slices extracted from 3D CT scans.
+This project uses deep learning EfficientNetB3 to detect lung cancer from CT scan images. It is based on the publicly available dataset from kaggle for 2D X Ray Images and 3D images from LUNA16 dataset and is focused on classifying pulmonary nodules as 2 types of cancerous or non-cancerous using 2D slices extracted from 3D CT scans.
 
 ---
 
@@ -9,9 +9,9 @@ This project uses deep learning (DenseNet121) to detect lung cancer from CT scan
 - 📚 **Dataset**: (https://luna16.grand-challenge.org/)
 - 
                    (https://www.kaggle.com/datasets/shubham2703/lung-cancer-image-dataset)
-- 🧠 **Model**: DenseNet121 (pretrained on ImageNet)
-- 📊 **Task**: Binary Classification – Cancer / No Cancer
-- 💻 **Framework**: PyTorch
+- 🧠 **Model**: EfficientNetB3 
+- 📊 **Task**: Multi Class Classification (3 classes) – Lung Adenocarcinoma, Lung squamous cell, Lung Benign Tissue
+- 💻 **Framework**: NumPy, TensorFlow, Keras, Matplotlib, scikit-learn, Pillow, Google Colab
 - 📁 **Manual Test Set**: 10 curated images for demonstration and testing
 
 ---
@@ -53,15 +53,15 @@ Copy
 Edit
 python sample.py
 🧠 Model Details
-Model: DenseNet121
+Model: EfficientNetB3
 
-Final layer modified for binary classification
+Final layer modified for multiclass classification
 
 Trained using binary cross-entropy loss and Adam optimizer
 
 Evaluation Metrics:
 
-✅ Accuracy: ~98%
+✅ Accuracy: ~94.2%
 🎯 F1 Score: ~0.94
 📈 ROC AUC: ~0.99
 
